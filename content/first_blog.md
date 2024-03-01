@@ -8,7 +8,7 @@ Summary:
 
 ## 1.Install pelican and create blog project:
 
-[Pelican](https://github.com/getpelican/pelican) is a static site generator that allows you create web sites by composing text files in formats such as markdown
+[Pelican](https://github.com/getpelican/pelican) is a static site generator that allows you create web sites by composing text files in formats such as markdown.
 
 ```shell
 python3 -m pip install "pelican[markdown]"
