@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <title>Opps - Generate Static Blog with Pelican</title>
+        <meta charset="utf-8" />
+        <meta name="generator" content="Pelican" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+
+    <meta name="tags" content="pelican" />
+
+</head>
+
+<body>
+        <header>
+              <hgroup><h1><a href="/">Opps</a></h1></hgroup>
+        <nav><ul>
+            <li><a href="/category/web.html"  aria-current="page" >web</a></li>
+        </ul></nav>
+        </header>
+        <main>
+<article>
+  <header>
+    <h2>
+      <a href="/generate-static-blog-with-pelican.html" rel="bookmark"
+         title="Permalink to Generate Static Blog with Pelican">Generate Static Blog with Pelican</a></h2>
+ 
+  </header>
+  <h1>Generate Static Blog with Pelican</h1>
+<h2>1.Install pelican and create blog project:</h2>
+<div class="highlight"><pre><span></span><code>python3<span class="w"> </span>-m<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span><span class="s2">&quot;pelican[markdown]&quot;</span>
+</code></pre></div>
+
+<p>then create your own blog folder just like:</p>
+<div class="highlight"><pre><span></span><code>mkdir<span class="w"> </span>MyStaticBlog
+<span class="nb">cd</span><span class="w"> </span>MyStaticBlog
+mkdir<span class="w"> </span>ganchuanman.github.io
+<span class="nb">cd</span><span class="w"> </span>ganchuanman.github.io
+</code></pre></div>
+
+<p>use pelican-quickstart command to gerate the blog project</p>
+<div class="highlight"><pre><span></span><code>pelican-quickstart
+</code></pre></div>
+
+<p>the pelican will ask you some questions about your project config:</p>
+<div class="highlight"><pre><span></span><code>pelican-quickstart
+Welcome<span class="w"> </span>to<span class="w"> </span>pelican-quickstart<span class="w"> </span>v4.9.1.
+
+This<span class="w"> </span>script<span class="w"> </span>will<span class="w"> </span><span class="nb">help</span><span class="w"> </span>you<span class="w"> </span>create<span class="w"> </span>a<span class="w"> </span>new<span class="w"> </span>Pelican-based<span class="w"> </span>website.
+
+Please<span class="w"> </span>answer<span class="w"> </span>the<span class="w"> </span>following<span class="w"> </span>questions<span class="w"> </span>so<span class="w"> </span>this<span class="w"> </span>script<span class="w"> </span>can<span class="w"> </span>generate<span class="w"> </span>the<span class="w"> </span>files
+needed<span class="w"> </span>by<span class="w"> </span>Pelican.
+
+
+&gt;<span class="w"> </span>Where<span class="w"> </span><span class="k">do</span><span class="w"> </span>you<span class="w"> </span>want<span class="w"> </span>to<span class="w"> </span>create<span class="w"> </span>your<span class="w"> </span>new<span class="w"> </span>web<span class="w"> </span>site?<span class="w"> </span><span class="o">[</span>.<span class="o">]</span><span class="w"> </span>ganchuanman.github.io
+&gt;<span class="w"> </span>What<span class="w"> </span>will<span class="w"> </span>be<span class="w"> </span>the<span class="w"> </span>title<span class="w"> </span>of<span class="w"> </span>this<span class="w"> </span>web<span class="w"> </span>site?<span class="w"> </span>Opps
+&gt;<span class="w"> </span>Who<span class="w"> </span>will<span class="w"> </span>be<span class="w"> </span>the<span class="w"> </span>author<span class="w"> </span>of<span class="w"> </span>this<span class="w"> </span>web<span class="w"> </span>site?<span class="w"> </span>ganchuanman
+&gt;<span class="w"> </span>What<span class="w"> </span>will<span class="w"> </span>be<span class="w"> </span>the<span class="w"> </span>default<span class="w"> </span>language<span class="w"> </span>of<span class="w"> </span>this<span class="w"> </span>web<span class="w"> </span>site?<span class="w"> </span><span class="o">[</span>en<span class="o">]</span><span class="w"> </span>en
+&gt;<span class="w"> </span>Do<span class="w"> </span>you<span class="w"> </span>want<span class="w"> </span>to<span class="w"> </span>specify<span class="w"> </span>a<span class="w"> </span>URL<span class="w"> </span>prefix?<span class="w"> </span>e.g.,<span class="w"> </span>https://example.com<span class="w">   </span><span class="o">(</span>Y/n<span class="o">)</span><span class="w"> </span>n
+&gt;<span class="w"> </span>Do<span class="w"> </span>you<span class="w"> </span>want<span class="w"> </span>to<span class="w"> </span><span class="nb">enable</span><span class="w"> </span>article<span class="w"> </span>pagination?<span class="w"> </span><span class="o">(</span>Y/n<span class="o">)</span><span class="w"> </span>Y
+&gt;<span class="w"> </span>How<span class="w"> </span>many<span class="w"> </span>articles<span class="w"> </span>per<span class="w"> </span>page<span class="w"> </span><span class="k">do</span><span class="w"> </span>you<span class="w"> </span>want?<span class="w"> </span><span class="o">[</span><span class="m">10</span><span class="o">]</span><span class="w"> </span><span class="m">20</span>
+&gt;<span class="w"> </span>What<span class="w"> </span>is<span class="w"> </span>your<span class="w"> </span><span class="nb">time</span><span class="w"> </span>zone?<span class="w"> </span><span class="o">[</span>Europe/Rome<span class="o">]</span><span class="w"> </span>China
+Please<span class="w"> </span>enter<span class="w"> </span>a<span class="w"> </span>valid<span class="w"> </span><span class="nb">time</span><span class="w"> </span>zone:
+<span class="w"> </span><span class="o">(</span>check<span class="w"> </span><span class="o">[</span>https://en.wikipedia.org/wiki/List_of_tz_database_time_zones<span class="o">])</span>
+&gt;<span class="w"> </span>What<span class="w"> </span>is<span class="w"> </span>your<span class="w"> </span><span class="nb">time</span><span class="w"> </span>zone?<span class="w"> </span><span class="o">[</span>Europe/Rome<span class="o">]</span><span class="w"> </span>Asia/Shanghai
+&gt;<span class="w"> </span>Do<span class="w"> </span>you<span class="w"> </span>want<span class="w"> </span>to<span class="w"> </span>generate<span class="w"> </span>a<span class="w"> </span>tasks.py/Makefile<span class="w"> </span>to<span class="w"> </span>automate<span class="w"> </span>generation<span class="w"> </span>and<span class="w"> </span>publishing?<span class="w"> </span><span class="o">(</span>Y/n<span class="o">)</span><span class="w"> </span>Y
+&gt;<span class="w"> </span>Do<span class="w"> </span>you<span class="w"> </span>want<span class="w"> </span>to<span class="w"> </span>upload<span class="w"> </span>your<span class="w"> </span>website<span class="w"> </span>using<span class="w"> </span>FTP?<span class="w"> </span><span class="o">(</span>y/N<span class="o">)</span><span class="w"> </span>N
+&gt;<span class="w"> </span>Do<span class="w"> </span>you<span class="w"> </span>want<span class="w"> </span>to<span class="w"> </span>upload<span class="w"> </span>your<span class="w"> </span>website<span class="w"> </span>using<span class="w"> </span>SSH?<span class="w"> </span><span class="o">(</span>y/N<span class="o">)</span><span class="w"> </span>N
+&gt;<span class="w"> </span>Do<span class="w"> </span>you<span class="w"> </span>want<span class="w"> </span>to<span class="w"> </span>upload<span class="w"> </span>your<span class="w"> </span>website<span class="w"> </span>using<span class="w"> </span>Dropbox?<span class="w"> </span><span class="o">(</span>y/N<span class="o">)</span><span class="w"> </span>N
+&gt;<span class="w"> </span>Do<span class="w"> </span>you<span class="w"> </span>want<span class="w"> </span>to<span class="w"> </span>upload<span class="w"> </span>your<span class="w"> </span>website<span class="w"> </span>using<span class="w"> </span>S3?<span class="w"> </span><span class="o">(</span>y/N<span class="o">)</span><span class="w"> </span>N
+&gt;<span class="w"> </span>Do<span class="w"> </span>you<span class="w"> </span>want<span class="w"> </span>to<span class="w"> </span>upload<span class="w"> </span>your<span class="w"> </span>website<span class="w"> </span>using<span class="w"> </span>Rackspace<span class="w"> </span>Cloud<span class="w"> </span>Files?<span class="w"> </span><span class="o">(</span>y/N<span class="o">)</span><span class="w"> </span>N
+&gt;<span class="w"> </span>Do<span class="w"> </span>you<span class="w"> </span>want<span class="w"> </span>to<span class="w"> </span>upload<span class="w"> </span>your<span class="w"> </span>website<span class="w"> </span>using<span class="w"> </span>GitHub<span class="w"> </span>Pages?<span class="w"> </span><span class="o">(</span>y/N<span class="o">)</span><span class="w"> </span>Y
+&gt;<span class="w"> </span>Is<span class="w"> </span>this<span class="w"> </span>your<span class="w"> </span>personal<span class="w"> </span>page<span class="w"> </span><span class="o">(</span>username.github.io<span class="o">)</span>?<span class="w"> </span><span class="o">(</span>y/N<span class="o">)</span><span class="w"> </span>y
+Done.<span class="w"> </span>Your<span class="w"> </span>new<span class="w"> </span>project<span class="w"> </span>is<span class="w"> </span>available<span class="w"> </span>at<span class="w"> </span>/Users/bytedance/workspace/com/MyStaticBlog/ganchuanman.github.io
+</code></pre></div>
+
+<h2>2.Config theme:</h2>
+<p>let's goto MyStaticBlog dir to clone the theme project:</p>
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/getpelican/pelican-themes.git
+</code></pre></div>
+
+<p>then you can choose a theme you like on this website: <a href="https://pelicanthemes.com/">Pelican Themes</a></p>
+<p>I like minimalism style, so i choose this <a href="https://pelicanthemes.com/martin-pelican/">martin-pelican</a> theme.</p>
+<p><img src="/assets/imgs/iShot_2024-03-01_09.56.12.png" alt="maritin-pelican" style="width:500px;"/></p>
+<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>pelican-themes/
+pelican-themes<span class="w"> </span>-i<span class="w"> </span>martin-pelican
+pelican-themes<span class="w"> </span>-U<span class="w"> </span>martin-pelican<span class="w"> </span>//<span class="w"> </span>use<span class="w"> </span>this<span class="w"> </span><span class="nb">command</span><span class="w"> </span>to<span class="w"> </span>make<span class="w"> </span>the<span class="w"> </span>new<span class="w"> </span>theme<span class="w"> </span>take<span class="w"> </span>effective
+</code></pre></div>
+
+<p>after install the theme, we need enter our blog project</p>
+<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>ganchuanman.github.io/
+</code></pre></div>
+
+<p>you can see pelicanconf.py file in your project root path, add a new line in the file:</p>
+<div class="highlight"><pre><span></span><code><span class="n">THEME</span> <span class="o">=</span> <span class="s2">&quot;martin-pelican&quot;</span>
+</code></pre></div>
+
+<p>then re-generate the website with your new theme:</p>
+<div class="highlight"><pre><span></span><code>pelican<span class="w"> </span>content
+</code></pre></div>
+
+<p>use this command to preview your blog content on http://127.0.0.1:8000</p>
+<div class="highlight"><pre><span></span><code>pelican<span class="w"> </span>--listen
+</code></pre></div>
+
+<h2>3.Write your first blog:</h2>
+<p>our blog content was written with markdown in content folder:</p>
+<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>ganchuanman.github.io/content
+touch<span class="w"> </span>first_blog.md
+</code></pre></div>
+  <footer>
+    <p>Published: <time datetime="2024-04-24T00:00:00+08:00">
+      Wed 24 April 2024
+    </time></p>
+    <address>
+      By           <a href="/author/ganchuanman.html">ganchuanman</a>
+    </address>
+    <p>
+        Category: <a href="/category/web.html">web</a>
+    </p>
+    <p>
+        Tags:
+            <a href="/tag/pelican.html">pelican</a>
+    </p>
+  </footer>
+  </article>
+        </main>
+        <footer>
+                <address>
+                Proudly powered by <a rel="nofollow" href="https://getpelican.com/">Pelican</a>,
+                which takes great advantage of <a rel="nofollow" href="https://www.python.org/">Python</a>.
+                </address>
+        </footer>
+</body>
+</html>
