@@ -110,6 +110,20 @@ pelican-themes<span class="w"> </span>-U<span class="w"> </span>martin-pelican<s
 <div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>ganchuanman.github.io/content
 touch<span class="w"> </span>first_blog.md
 </code></pre></div>
+
+<h2>4.Publish blog to github page:</h2>
+<p>Pelican is pure static website generator, the repo/output folder is the root document path of blog website. If we choose Github Pages as blog site hosting server, there is a problem need to be solved: it requires a gh-pages branch that is the site's document root. This means that keeping documentation sources in the branch with code is a bit difficult.</p>
+<p>but there is a util makes it easy: <a href="https://github.com/c-w/ghp-import">ghp-import</a></p>
+<div class="highlight"><pre><span></span><code>pip3<span class="w"> </span>install<span class="w"> </span>ghp-import
+</code></pre></div>
+
+<p>after install ghp-import,  we can publish our output content to anthor branch named gh-pages.</p>
+<div class="highlight"><pre><span></span><code>ghp-import<span class="w"> </span>output
+git<span class="w"> </span>push<span class="w"> </span>origin<span class="w"> </span>gh-pages
+</code></pre></div>
+
+<p>then config the github repo settings of ganchuanman.github.io:</p>
+<p><img src="/assets/imgs/iShot_2024-03-01_11.56.40.png" alt="github-pages-setting" style="width:500px;"/></p>
   <footer>
     <p>Published: <time datetime="2024-04-24T00:00:00+08:00">
       Wed 24 April 2024

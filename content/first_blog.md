@@ -22,6 +22,7 @@ use pelican-quickstart command to gerate the blog project
 pelican-quickstart
 ```
 the pelican will ask you some questions about your project config:
+
 ```shell
 pelican-quickstart
 Welcome to pelican-quickstart v4.9.1.
@@ -93,3 +94,20 @@ our blog content was written with markdown in content folder:
 cd ganchuanman.github.io/content
 touch first_blog.md
 ```
+
+## 4.Publish blog to github page:
+Pelican is pure static website generator, the repo/output folder is the root document path of blog website. If we choose Github Pages as blog site hosting server, there is a problem need to be solved: it requires a gh-pages branch that is the site's document root. This means that keeping documentation sources in the branch with code is a bit difficult.
+
+but there is a util makes it easy: [ghp-import](https://github.com/c-w/ghp-import)
+
+```shell
+pip3 install ghp-import
+```
+after install ghp-import,  we can publish our output content to anthor branch named gh-pages.
+```shell
+ghp-import output
+git push origin gh-pages
+```
+ then config the github repo settings of ganchuanman.github.io:
+
+<img src="{attach}/assets/imgs/iShot_2024-03-01_11.56.40.png" alt="github-pages-setting" style="width:500px;"/>
