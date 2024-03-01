@@ -7,6 +7,9 @@ Summary:
 # Generate Static Blog with Pelican
 
 ## 1.Install pelican and create blog project:
+
+[Pelican](https://github.com/getpelican/pelican) is a static site generator that allows you create web sites by composing text files in formats such as markdown
+
 ```shell
 python3 -m pip install "pelican[markdown]"
 ```
@@ -103,7 +106,7 @@ but there is a util makes it easy: [ghp-import](https://github.com/c-w/ghp-impor
 ```shell
 pip3 install ghp-import
 ```
-after install ghp-import,  we can publish our output content to anthor branch named gh-pages.
+after install ghp-import,  we can publish our output content to another branch named gh-pages.
 ```shell
 ghp-import output
 git push origin gh-pages
