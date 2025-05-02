@@ -3,8 +3,22 @@
 - 技术
   - Android Framework
       - [WSL2编译AOSP](/TechArticles/AndroidFramework/Wsl2CompileAOSP/index.md)
+  - 计算机基础
+    - 数据结构
+    - 计算机网络
+    - 操作系统
+    - 算法刷题
+      - 数组
+      - 链表
+      - 字符串
+      - 哈希表
+      - 模拟题
+  - 软考高级系统架构设计师  
 - 阅读
   - [我看见的世界-李飞飞自传](/ReadBooks/我看见的世界-李飞飞自传/index.md)
+- 生活
+  - [离职了，回顾在字节的5年]()
+  - [关于找工作，一些感想]()
 - 关于
   - [关于](/About/about.md)
   - [个人简历](/About/resume.md)
