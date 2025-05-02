@@ -7,7 +7,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <meta name="description" content="Description">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/lib/themes/vue.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple.css">
+
 </head>
 
 <body>
@@ -25,11 +26,38 @@
         language: 'chinese'
       },
       notFoundPage: true,
-      formatUpdated: '{MM}/{DD} {HH}:{mm}'
+      timeUpdater: {
+        text: "> 最后更新时间: {docsify-updated}",
+        formatUpdated: "{YYYY}/{MM}/{DD}",
+        whereToPlace: "top",
+      },
+      plugins: [
+        function (hook) {
+          var new_date = new Date();
+          var old_date = new Date("2025-05-02 00:00:00");
+          var difftime = parseInt((new_date - old_date) / (86400000));
+
+          var footer = [
+            '<hr/>',
+            '<footer>',
+            '<span>已运行 ',
+            difftime,
+            ' 天 | </span>',
+            '<span>Powered by <a href="https://github.com/docsifyjs/docsify" target="_blank">docsify</a>.</span>',
+            '</footer>'
+          ].join('');
+
+          hook.afterEach(function (html) {
+            return html + footer;
+          });
+        }
+      ]
     }
   </script>
   <!-- Docsify v4 -->
   <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+  <!-- 文章更新日期统计 -->
+  <script src="https://cdn.jsdelivr.net/npm/docsify-updated/src/time-updater.min.js"></script>
   <!-- 字数统计插件 -->
   <script src="//unpkg.com/docsify-count/dist/countable.js"></script>
   <!-- 复制代码插件 -->
