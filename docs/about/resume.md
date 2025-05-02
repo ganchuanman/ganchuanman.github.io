@@ -53,17 +53,17 @@
 
 
 ## 专业技能
-### Android客户端技术：
+### Android客户端技术
 - 熟悉常见的 Android 开发相关技术。
 - 熟悉 Java 和 Kotlin 编程。
 - 熟悉面向对象编程以及常用设计模式，重构技巧，注重代码质量。
 - 熟悉常用的数据结构以及相关算法。
 - 熟悉 Android Framework 层，并有一定的 Android 源码阅读经验。
-### 其它端技术：
+### 其它端技术
 - 熟悉前端技术栈的编程语言：TypedScript、ArkTS。
 - 熟悉基于 React 技术栈的 Taro 小程序开发，完成过 抖店App 核心模块小程序化的开发工作。
 - 熟悉鸿蒙端 ArkUI 开发。
 - 了解基于 React 技术栈的 Lynx 以及 H5 开发工作。
 - 了解 Flutter 开发，能良好支撑 Flutter 技术栈业务开发。
-### 其它：
+### 其它
 - 了解 Python，Shell，NodeJS 编程，日常工作中关注通过工具提高开发和工作效率
