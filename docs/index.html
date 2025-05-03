@@ -41,6 +41,32 @@
         headings: 'h2, h3, h4, h5, h6',
         title: '目录',
       },
+      plantuml: {
+        skin: 'default',
+      },
+      markdown: {
+        renderer: {
+          link: function (token) {
+            if (`${token}`.endsWith('drawio')) {
+              // 下面是解析的部分
+              return window.remoteDrawioConverter(token)
+            }
+            return this.origin.link.apply(this, arguments)
+          },
+          code: function (code, lang) {
+          if (lang === 'drawio') {
+            if (window.drawioConverter) {
+              console.log('drawio 转化中')
+              return window.drawioConverter(code)
+            } else {
+              return `<div class='drawio-code'>${code}</div>`
+            }
+          } else {
+            return this.origin.code.apply(this, arguments);
+          }
+        }
+        }
+      },
       plugins: [
         function (hook) {
           var new_date = new Date();
@@ -67,6 +93,8 @@
   <!-- Docsify v4 -->
   <script src="plugins/toc.js"></script>
   <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify-drawio/viewer.min.js"></script>
+  <script src='plugins/drawio.js'></script>
   <!-- sidebar支持展开收起 -->
   <script src="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/docsify-sidebar-collapse.min.js"></script>
   <!-- 文章更新日期统计 -->
@@ -80,6 +108,7 @@
   <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-bash.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-kotlin.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-java.min.js"></script>
+  <script src="//unpkg.com/docsify-plantuml/dist/docsify-plantuml.min.js"></script>
 </body>
 
 </html>

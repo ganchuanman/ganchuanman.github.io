@@ -1,25 +1,3 @@
-> 人生如逆旅，我亦是行人。
-
-本站点基于 [docsify](https://github.com/docsifyjs/docsify) 构建。
-使用到了如下插件：
-- 
-
-plantuml 测试
-
-```plantuml
-@startuml
-Alice -> Bob: Authentication Request
-Bob --> Alice: Authentication Response
-
-Alice -> Bob: Another authentication Request
-Alice <-- Bob: another authentication Response
-@enduml
-```
-
-
-drawio 测试
-[](/About/pics/TestDrawIo.drawio)
-```drawio
 <mxfile host="65bd71144e">
     <diagram id="GJAwkbXEC2regrHjeEgt" name="Page-1">
         <mxGraphModel dx="422" dy="855" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
@@ -51,10 +29,3 @@ drawio 测试
         </mxGraphModel>
     </diagram>
 </mxfile>
-```
-
-
-
----
-可以加微信进一步交流：
-<p><img src="/About/pics/wechat.jpg" width="300"/></p>

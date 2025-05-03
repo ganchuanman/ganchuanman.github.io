@@ -24,5 +24,5 @@
   - [离职了，回顾在字节的5年]()
   - [关于找工作，一些感想]()
 - 关于
-  - [关于](/About/about.md)
+  - [关于本站](/About/about.md)
   - [个人简历](/About/resume.md)

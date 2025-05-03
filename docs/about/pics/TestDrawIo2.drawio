@@ -1,0 +1,31 @@
+<mxfile host="65bd71144e">
+    <diagram id="GJAwkbXEC2regrHjeEgt" name="Page-1">
+        <mxGraphModel dx="603" dy="1221" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="2" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=none;fontColor=#333333;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
+                    <mxGeometry x="160" y="110" width="460" height="290" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="docsify" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=none;sketch=1;curveFitting=1;jiggle=2;shadow=1;glass=0;" parent="1" vertex="1">
+                    <mxGeometry x="170" y="330" width="440" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="plugins" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#b0e3e6;strokeColor=none;sketch=1;curveFitting=1;jiggle=2;shadow=1;glass=0;" parent="1" vertex="1">
+                    <mxGeometry x="170" y="260" width="140" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="themes" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#b1ddf0;strokeColor=none;sketch=1;curveFitting=1;jiggle=2;shadow=1;glass=0;" parent="1" vertex="1">
+                    <mxGeometry x="320" y="260" width="140" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" value="themes" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d0cee2;strokeColor=none;sketch=1;curveFitting=1;jiggle=2;shadow=1;glass=0;" parent="1" vertex="1">
+                    <mxGeometry x="470" y="260" width="140" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" value="content" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fad7ac;strokeColor=none;sketch=1;curveFitting=1;jiggle=2;shadow=1;glass=0;" parent="1" vertex="1">
+                    <mxGeometry x="170" y="190" width="440" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" value="github pages" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fad9d5;strokeColor=none;sketch=1;curveFitting=1;jiggle=2;shadow=1;glass=0;" parent="1" vertex="1">
+                    <mxGeometry x="170" y="120" width="440" height="60" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
