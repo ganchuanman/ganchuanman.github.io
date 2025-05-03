@@ -3,6 +3,10 @@
 - 技术
   - Android Framework
       - [WSL2编译AOSP](/TechArticles/AndroidFramework/Wsl2CompileAOSP/index.md)
+      - Android Handler机制
+        - [第一篇](/TechArticles/AndroidFramework/AndroidHandler/index1.md)
+        - [第二篇](/TechArticles/AndroidFramework/AndroidHandler/index2.md)
+        - [第三篇](/TechArticles/AndroidFramework/AndroidHandler/index2.md)
   - 计算机基础
     - 数据结构
     - 计算机网络
