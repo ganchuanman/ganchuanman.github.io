@@ -1,5 +1,5 @@
 <!-- _navbar.md -->
-- [首页](/)
+- [首页]()
 - 技术
   - Android Framework
       - [WSL2编译AOSP](/TechArticles/AndroidFramework/Wsl2CompileAOSP/index.md)
