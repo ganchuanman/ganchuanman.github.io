@@ -169,7 +169,7 @@ sudo apt-get update
 还是报错，继续检索解决方案：[apt - Failed to download libncurses5 - Ask Ubuntu](https://askubuntu.com/questions/1367038/failed-to-download-libncurses5)
 > So you are running 64-bit Ubuntu 20.04 LTS. You can restore default APT repositories using the following single long command:
 
-```
+```bash
 cat <<EOF | sudo tee /etc/apt/sources.list
 deb http://archive.ubuntu.com/ubuntu/ focal main universe multiverse restricted
 deb http://security.ubuntu.com/ubuntu/ focal-security main universe multiverse restricted
@@ -185,7 +185,7 @@ EOF
 
 add 32-bit i386 architecture, update package lists using and install needed packages
 
-```
+```bash
 sudo dpkg --add-architecture i386
 sudo apt-get update
 sudo apt-get install libncurses5 libncurses5:i386
@@ -233,7 +233,7 @@ List of devices attached
 error: cannot connect to daemon at tcp:5037: Connection refused
 ```
 首先在宿主Windows主机上执行：
-```cmd
+```bash
 adb tcpip 5037
 ```
 之后WSL中语气就能够找到对应设备了
@@ -262,7 +262,7 @@ aaron@WIN-J63HDD4FA90:~/aosp/aosp$ fastboot flashall -w
 
 
 最终还是决定，回到windows的powershell终端中进行刷机，再进入fastboot模式后，powershell中：
-```powershell
+```bash
 PS C:\Users\Administrator> fastboot devices
 9C241FFBA001DW   fastboot
 ```

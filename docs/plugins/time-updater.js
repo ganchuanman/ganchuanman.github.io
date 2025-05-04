@@ -1,4 +1,4 @@
-let defaultDocsifyUpdatedOptions = { text: ">Last Modify: {docsify-updated}", formatUpdated: "{YYYY}/{MM}/{DD}", whereToPlace: "bottom" };
+let defaultDocsifyUpdatedOptions = { text: "> Last Modify: {docsify-updated}", formatUpdated: "{YYYY}/{MM}/{DD}", whereToPlace: "bottom" };
 function plugin(t, d) {
   let o = d.config.timeUpdater.text;
   let i = String(d.config.timeUpdater.whereToPlace).toLowerCase();
