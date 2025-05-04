@@ -143,15 +143,8 @@ function plugin(hook, vm) {
             return;
         }
 
-        // Fix me in the future
-        // var title = document.createElement('p');
-        // title.innerHTML = userOptions.title;
-        // title.setAttribute('class', 'title');
-
         var container = document.createElement('div');
         container.setAttribute('class', 'page_toc');
-
-        // container.appendChild(title);
         container.appendChild(toc);
 
         // Existing TOC

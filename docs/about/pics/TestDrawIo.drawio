@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram id="GJAwkbXEC2regrHjeEgt" name="Page-1">
-        <mxGraphModel dx="767" dy="1555" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+        <mxGraphModel dx="1011" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -16,10 +16,10 @@
                 <mxCell id="5" value="themes" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#b1ddf0;strokeColor=none;" vertex="1" parent="1">
                     <mxGeometry x="320" y="260" width="140" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="6" value="themes" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d0cee2;strokeColor=none;" vertex="1" parent="1">
+                <mxCell id="6" value="custom-styles" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d0cee2;strokeColor=none;" vertex="1" parent="1">
                     <mxGeometry x="470" y="260" width="140" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="7" value="content" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fad7ac;strokeColor=none;" vertex="1" parent="1">
+                <mxCell id="7" value="markdown-content" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fad7ac;strokeColor=none;" vertex="1" parent="1">
                     <mxGeometry x="170" y="190" width="440" height="60" as="geometry"/>
                 </mxCell>
                 <mxCell id="8" value="github pages" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fad9d5;strokeColor=none;" vertex="1" parent="1">

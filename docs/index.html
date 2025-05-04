@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 
 <head>
   <meta charset="UTF-8">
@@ -9,8 +9,6 @@
   <meta name="description" content="Description">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
   <link rel="stylesheet" href="theme/theme.css">
-  <!-- <link rel="stylesheet" href="theme/sidebar.css" />
-  <link rel="stylesheet" href="theme/sidebar-folder.css" /> -->
   <link rel="stylesheet" href="theme/toc.css">
 
 </head>
@@ -42,29 +40,29 @@
         title: '目录',
       },
       plantuml: {
-        skin: 'default',
+        skin: 'sketch',
       },
       markdown: {
         renderer: {
           link: function (token) {
-            if (`${token}`.endsWith('drawio')) {
+            if (`${token}`.endsWith('.drawio')) {
               // 下面是解析的部分
               return window.remoteDrawioConverter(token)
             }
             return this.origin.link.apply(this, arguments)
           },
           code: function (code, lang) {
-          if (lang === 'drawio') {
-            if (window.drawioConverter) {
-              console.log('drawio 转化中')
-              return window.drawioConverter(code)
+            if (lang === 'drawio') {
+              if (window.drawioConverter) {
+                console.log('drawio 转化中')
+                return window.drawioConverter(code)
+              } else {
+                return `<div class='drawio-code'>${code}</div>`
+              }
             } else {
-              return `<div class='drawio-code'>${code}</div>`
+              return this.origin.code.apply(this, arguments);
             }
-          } else {
-            return this.origin.code.apply(this, arguments);
           }
-        }
         }
       },
       plugins: [
@@ -73,15 +71,14 @@
           var old_date = new Date("2025-05-02 00:00:00");
           var difftime = parseInt((new_date - old_date) / (86400000));
 
-          var footer = [
-            '<hr/>',
-            '<footer>',
-            '<span>已运行 ',
-            difftime,
-            ' 天 | </span>',
-            '<span>Powered by <a href="https://github.com/docsifyjs/docsify" target="_blank">docsify</a>.</span>',
-            '</footer>'
-          ].join('');
+          var footer = `<hr />
+<footer>
+  <div style="display:flex;flex-direction:row;align-items: baseline;">
+    <span>已运行 ${difftime} 天 </span>
+    <div style="width:1px;height:.6rem;background-color:#E3E3E3;align-items: center;margin-left: 6px;margin-right: 6px;"></div>
+    <span>Powered by <a href="https://github.com/docsifyjs/docsify" target="_blank">docsify</a>.</span>
+  </div>
+</footer>`
 
           hook.afterEach(function (html) {
             return html + footer;
