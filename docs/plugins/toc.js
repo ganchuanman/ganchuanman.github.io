@@ -185,6 +185,10 @@ function plugin(hook, vm) {
             break;
           }
         }
+        // 极端 case，找了一圈发现没有找到符合条件的，拿第一个标题顶上
+        if (!currentHeader) {
+          currentHeader = headers[0];
+        }
         if (currentHeader) {
           currentATag = document.getElementById(currentHeader.__toc_id)
           activeATag(currentATag)
