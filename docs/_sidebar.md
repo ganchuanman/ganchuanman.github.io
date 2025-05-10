@@ -2,7 +2,7 @@
 - [首页]()
 - 技术
   - [Android开发知识体系](/Tech/AndroidDev/index.md)
-  - [计算机基础](/Tech/Cs/index.md)
+  - [计算机基础](/Tech/ComputerScience/index.md)
   <!-- - 软考高级系统架构设计师 -->
 - 阅读
   - [我看见的世界-李飞飞自传](/Reads/我看见的世界-李飞飞自传/index.md)
