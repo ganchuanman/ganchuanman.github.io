@@ -11,4 +11,4 @@
   - [关于找工作，一些感想](/Life/关于找工作，一些感想/index.md)
 - 关于
   - [关于本站](/About/about.md)
-  - [个人简历](/About/resumecv.md)
+  - [个人简历](/About/showresume.md)

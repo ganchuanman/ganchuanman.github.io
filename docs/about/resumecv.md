@@ -11,8 +11,6 @@ header:
     link: https://ganchuanman.github.io/
 --- -->
 
-[PDF简历下载(From Github)]()
-
 
 ## 教育背景
 
