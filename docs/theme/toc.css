@@ -74,9 +74,11 @@
   
   @media screen and (max-width: 1300px) {
     .page_toc {
+      visibility: hidden;
+      height: 0;
       position: relative;
       left: 0;
-      top: -20px;
+      top: 0;
       padding: 10px 0;
       border: none;
       border-bottom: 1px solid #ddd;

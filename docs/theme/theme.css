@@ -216,6 +216,10 @@ strong {
     color: var(--strong-color, currentColor)
 }
 
+a strong {
+    color: var(--jjext-color-brand)
+}
+
 sub,
 sup {
     font-size: var(--subsup-font-size);
@@ -452,7 +456,7 @@ pre[data-lang] {
 
 .markdown-section a {
     border-bottom: var(--link-border-bottom);
-    color: var(--link-color);
+    color: var(--jjext-color-brand);
     -webkit-text-decoration: var(--link-text-decoration);
     text-decoration: var(--link-text-decoration);
     -webkit-text-decoration-color: var(--link-text-decoration-color);

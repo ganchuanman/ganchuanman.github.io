@@ -1,24 +1,15 @@
 <!-- _navbar.md -->
 - [首页]()
 - 技术
-  - Android Framework
-      - [WSL2编译AOSP](/TechArticles/AndroidFramework/Wsl2CompileAOSP/index.md)
-      - Android Handler机制
-        - [第一篇](/TechArticles/AndroidFramework/AndroidHandler/index1.md)
-        - [第二篇](/TechArticles/AndroidFramework/AndroidHandler/index2.md)
-        - [第三篇](/TechArticles/AndroidFramework/AndroidHandler/index2.md)
+  - [Android开发知识体系](/TechArticles/AndroidDev/index.md)
   - 计算机基础
     - 数据结构&算法
       - [算法4](/TechArticles/Cs/Algorithms4/index.md)
+      - [数据结构-邓俊辉](/TechArticles/Cs/DataStructure_DJH/index.md)
+      - [算法刷题](/TechArticles/Cs/Leetcode/index.md)
     - 计算机网络
     - 操作系统
-    - 算法刷题
-      - 数组
-      - 链表
-      - 字符串
-      - 哈希表
-      - 模拟题
-  - 软考高级系统架构设计师  
+  - 软考高级系统架构设计师
 - 阅读
   - [我看见的世界-李飞飞自传](/ReadBooks/我看见的世界-李飞飞自传/index.md)
 - 生活

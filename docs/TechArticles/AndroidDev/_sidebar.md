@@ -1,0 +1,26 @@
+<!-- _navbar.md -->
+- [首页]()
+- [概要](/TechArticles/AndroidDev/index.md)
+- Java
+  - 基础编程
+  - 集合
+  - 并发工具
+  - IO
+  - JNI
+  - JVM
+- Kotlin
+  - Kotlin 语法糖
+  - DSL
+  - 协程框架
+  - 泛型
+- Android
+  - Android 基础
+  - Android Jetpack 架构组件
+  - Android Framework
+    - [WSL2编译AOSP](/TechArticles/AndroidFramework/Wsl2CompileAOSP/index.md)
+    - Android Handler机制
+      - [第一篇](/TechArticles/AndroidFramework/AndroidHandler/index1.md)
+      - [第二篇](/TechArticles/AndroidFramework/AndroidHandler/index2.md)
+      - [第三篇](/TechArticles/AndroidFramework/AndroidHandler/index2.md)
+  - Android 性能优化
+  - 开源框架
