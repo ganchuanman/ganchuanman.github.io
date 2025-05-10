@@ -1,5 +1,5 @@
 <!-- _navbar.md -->
-- [首页]()
+- [回到首页]()
 - [概要](/TechArticles/AndroidDev/index.md)
 - Java
   - 基础编程
