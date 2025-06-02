@@ -1,0 +1,68 @@
+<style>
+	.footer-nav-item {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		padding: 4px 0px;
+	}
+
+	.footer-nav-item img {
+		width: 18px;
+		height: 18px;
+	}
+
+
+	.footer-nav-item a {
+		color: #5c5962;
+		font-size: 14px;
+		margin-left: 4px;
+	}
+
+	.footer-nav-item a:hover {
+		color: #7253ed;
+	}
+
+	/* 定义二维码浮层样式 */
+	.wechat-qr-code {
+		display: none;
+		position: absolute;
+		z-index: 1000;
+		background: white;
+		border: 1px solid #ddd;
+		border-radius: 4px;
+		padding: 8px;
+		box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+		/* 定位浮层在 hover 元素上方 */
+		bottom: 3%; /* 将浮层底部对齐 hover 元素顶部 */
+		transform: translateX(22px); /* 根据图标宽度调整位置 */
+	}
+
+
+	/* 鼠标悬停时显示二维码浮层 */
+	.footer-nav-item a:hover+.wechat-qr-code {
+		display: block;
+	}
+</style>
+
+<div style="width: 100%; display: flex; align-items:center; flex-direction: column; margin-bottom: 16px;">
+	<div>
+		<div class="footer-nav-item">
+			<img src="/assets/images/github.png" />
+			<a href="https://github.com/ganchuanman/ganchuanman.github.io" target="_blank">Github</a>
+		</div>
+		<!-- 
+		<div class="footer-nav-item">
+			<img src="/assets/images/gitee.png" />
+			<a>Gitee</a>
+		</div> -->
+
+		<div class="footer-nav-item">
+			<img src="/assets/images/weixin.png" />
+			<a>微信</a>
+			<!-- 二维码浮层 -->
+			<div class="wechat-qr-code">
+				<img src="/assets/images/wechat-qrcode.jpg" style="width: 150px; height: 150px;" />
+			</div>
+		</div>
+	</div>
+</div>
